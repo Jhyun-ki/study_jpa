@@ -66,6 +66,6 @@ public class OrderService {
     //아래 메서드와 같이 단순 위임일 경우에는 그냥 컨트롤러에서 바로 orderRepository로 접근해도 무방하다
     //크게상관없으니 아무거나..
     public List<Order> findOrders(OrderSearch orderSearch){
-        return orderRepository.findAllByCriteria(orderSearch);
+        return orderRepository.findAll(orderSearch);
     }
 }
